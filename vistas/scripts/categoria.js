@@ -5,7 +5,7 @@ var tabla;
 // Funcion init que inicializa
 function init() 
 {
-    mostarform(false);
+    mostrarform(false);
     listar();
 }
 
@@ -18,7 +18,7 @@ function limpiar()
 }
 
 // Funcion mostarform que dependienteo del valor del parámetro, muestra el div del listado y esconde el formulario o viceversa
-function mostarform(flag) 
+function mostrarform(flag) 
 {
     limpiar();
     if (flag)
@@ -38,7 +38,7 @@ function mostarform(flag)
 function cancelarform()
 {
     limpiar();
-    mostarform(false);
+    mostrarform(false);
 }
 
 // Función listar para enviar un valor mediante ajax a categoria.php
