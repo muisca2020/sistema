@@ -19,6 +19,6 @@
     <script type="text/javascript" src="../public/datatables/jszip.min.js"></script>
     <script type="text/javascript" src="../public/datatables/pdfmake.min.js"></script>
     <script type="text/javascript" src="../public/datatables/vfs_fonts.js"></script>
-
+    <script type="text/javascript" src="../public/js/bootbox.min.js"></script>
   </body>
 </html>

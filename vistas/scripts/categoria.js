@@ -7,6 +7,11 @@ function init()
 {
     mostrarform(false);
     listar();
+
+    // Este código se activa cuando se dispara el evento submit y es la encargada de pasar el evento y sus datos a la función guardaryeditar
+    $( "#formulario" ).on( "submit", function( event ){
+        guardaryeditar( event );
+    })
 }
 
 // Funcion limpiar que limpia el contenido de los campos
@@ -70,6 +75,28 @@ function listar()
         }
     ).DataTable();
 
+}
+
+function guardaryeditar( e )
+{
+    e.preventDefault(); // Se usa para evitar que se ejecute la acción por default del evento
+    $("#btnGuardar").prop("disabled", true); // Desabilita el botón de guardar
+    var formData = new FormData( $("#formulario")[0] ); // Se recibe todo el contenido del formulario
+
+    $.ajax({
+        url: "../ajax/categoria.php?op=guardaryeditar",
+        type: "POST",
+        data: formData,
+        contentType: false,
+        processData: false,
+
+        success: function( datos ) {
+            bootbox.alert( datos ); // Este alert miestra los mensajes que recibe como respuesta desde el categoria de ajax
+            mostrarform( false ); // Se oculta de nuevo el formulario
+            tabla.ajax.reload(); // Se hace un llamado mediante Ajax para recargar la tabla de categorias
+        }
+    });
+    limpiar();
 }
 
 init();
