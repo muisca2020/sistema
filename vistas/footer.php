@@ -12,13 +12,15 @@
     <script src="../public/js/app.min.js"></script>
 
     <!-- Espacio para las librerias de DataTables -->
-    <script type="text/javascript" src="../public/datatables/buttons.colVis.min.js"></script>
-    <script type="text/javascript" src="../public/datatables/buttons.html5.min.js"></script>
-    <script type="text/javascript" src="../public/datatables/dataTables.buttons.min.js"></script>
     <script type="text/javascript" src="../public/datatables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../public/datatables/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="../public/datatables/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="../public/datatables/buttons.colVis.min.js"></script>
     <script type="text/javascript" src="../public/datatables/jszip.min.js"></script>
     <script type="text/javascript" src="../public/datatables/pdfmake.min.js"></script>
     <script type="text/javascript" src="../public/datatables/vfs_fonts.js"></script>
+
+    <!-- Se adiciona esta librería javascript para hacer más bonito el cuadro modal del mensaje -->
     <script type="text/javascript" src="../public/js/bootbox.min.js"></script>
   </body>
 </html>

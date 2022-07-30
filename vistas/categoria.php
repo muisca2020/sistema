@@ -28,7 +28,7 @@
                           </thead>
                           <tbody></tbody>
                           <tfoot>
-                          <th>Opciones</th>
+                            <th>Opciones</th>
                             <th>Nombre</th>
                             <th>Descripción</th>
                             <th>Estado</th>
@@ -38,8 +38,8 @@
                     <div class="panel-body" style="height: 400px;" id="formularioregistros">
                         <form name="formulario" id="formulario" method="POST">
                             <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <label>Nombre:</label>
                               <input type="hidden" name="idcategoria" id="idcategoria">
+                              <label>Nombre:</label>
                               <input type="text" name="nombre" id="nombre" maxlength="50" class="form-control" placeholder="Nombre" required>
                             </div>
                             <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -50,7 +50,6 @@
                               <button class="btn btn-primary" type="submit" id="btnGuardar">
                                   <i class="fa fa-save"></i> Guardar
                               </button>
-
                               <button class="btn btn-danger" type="button" onclick="cancelarform()">
                                   <i class="fa fa-arrow-circle-left"></i> Cancelar
                               </button>

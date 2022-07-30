@@ -53,7 +53,7 @@ use JetBrains\PhpStorm\ArrayShape;
             while ( $row = $rspta->fetch_object() )
             {
                 $data[] = array(
-                    "0" => $row->idcategoria,
+                    "0" => '<button class="btn btn-warning" onclick="mostrar('.$row->idcategoria.')"><i class="fa fa-pencil"></i></button>',
                     "1" => $row->nombre,
                     "2" => $row->descripcion,
                     "3" => $row->condicion
